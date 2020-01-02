@@ -1,0 +1,33 @@
+version: '2'
+
+services :
+  portainer:
+    image: portainer/portainer
+    container_name: portainer
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    expose:
+      - "9000"
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  server:
+    image: nginx:alpine
+    container_name: server
+    restart: unless-stopped
+    hostname: Uglyboy
+    ports:
+      - 9000:9000
+    volumes:
+      - $CONFIG:/etc/nginx/conf.d/
+      - $SSL:/etc/nginx/cert/
+
+volumes:
+  portainer_data:
