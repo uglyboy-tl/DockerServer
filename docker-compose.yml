@@ -8,8 +8,6 @@ services :
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
-    expose:
-      - "9000"
 
   watchtower:
     image: containrrr/watchtower
@@ -20,6 +18,16 @@ services :
     environment:
       - REPO_USER=$USERNAME
       - REPO_PASS=$USERPASS
+
+  flask:
+    image: guixi/flask_server
+    container_name: api_python
+    restart: unless-stopped
+    devices:
+      - /dev/snd
+    volumes:
+      - $API:/api/app
+      - ./logs/uwsgi.log:/uwsgi.log
 
   server:
     image: nginx:alpine
