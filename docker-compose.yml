@@ -20,7 +20,7 @@ services :
       - REPO_PASS=$USERPASS
 
   controller:
-    image: guixi/flask_server
+    image: guixi/controller
     container_name: controller
     restart: unless-stopped
     devices:
