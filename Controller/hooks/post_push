@@ -1,0 +1,2 @@
+#!/bin/sh
+docker run -v $PWD/multiarch.yaml:/multiarch.yaml -v $PWD/config.json:/config.json --rm mplatform/manifest-tool --docker-cfg / push from-spec /multiarch.yaml

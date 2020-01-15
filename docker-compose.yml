@@ -19,9 +19,9 @@ services :
       - REPO_USER=$USERNAME
       - REPO_PASS=$USERPASS
 
-  flask:
+  controller:
     image: guixi/flask_server
-    container_name: api_python
+    container_name: controller
     restart: unless-stopped
     devices:
       - /dev/snd
