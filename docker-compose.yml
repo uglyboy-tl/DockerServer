@@ -28,6 +28,7 @@ services :
     volumes:
       - $API:/api/app
       - ./logs/uwsgi.log:/uwsgi.log
+      - $UWSGI_INI:/uwsgi.ini
 
   server:
     image: nginx:alpine
