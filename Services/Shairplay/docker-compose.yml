@@ -1,0 +1,11 @@
+version: '2.0'
+services : 
+  shairport-sync:
+    image: orbsmiv/shairport-sync-rpi
+    container_name: airplay
+    restart: unless-stopped
+    devices:
+      - /dev/snd
+    environment:
+      - AIRPLAY_NAME=树莓派
+    network_mode: "host"
