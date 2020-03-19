@@ -1,0 +1,8 @@
+'1584430879962':
+  alias: 测试语音
+  sequence:
+  - data:
+      cache: true
+      entity_id: media_player.shu_mei_pai_yin_xiang
+      message: '{{state_attr(''sensor.yun_dong_zhi_shu'', ''生活建议'')}}'
+    service: tts.baidu_say

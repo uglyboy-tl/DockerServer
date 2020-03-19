@@ -1,0 +1,4 @@
+weather:
+  - platform: he_weather
+    id: 东城
+    api_key: 8c6d2971631041738aa4bdc490354b40

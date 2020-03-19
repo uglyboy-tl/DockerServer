@@ -1,0 +1,135 @@
+resources:
+  - type: module
+    url: /local/lovelace/simple-weather-card.bundle.js?v=0.3.0
+  - type: module
+    url: /local/lovelace/mini-media-player.bundle.js
+title: 家庭助手
+views:
+  - badges: []
+    cards:
+      - cards:
+          - backdrop:
+              day: var(--primary-color)
+              night: '#40445a'
+            entity: weather.dong_cheng
+            type: 'custom:simple-weather-card'
+          - entities:
+              - entity: sensor.kong_qi_zhi_liang
+              - entity: sensor.kong_qi_zhi_liang_zhi_shu
+              - entity: sensor.zhu_yao_wu_ran_wu
+              - entity: sensor.pm2_5
+              - entity: sensor.pm10
+            type: glance
+          - entities:
+              - entity: sensor.shi_shi_ti_gan_wen_du
+              - entity: sensor.tian_qi_zhuang_tai
+              - entity: sensor.zi_wai_xian_zhi_shu
+              - entity: sensor.neng_jian_du
+              - entity: sensor.shu_gua_du_zhi_shu
+            type: glance
+          - entities:
+              - entity: sensor.xi_che_zhi_shu
+              - entity: sensor.chuan_yi_zhi_shu
+              - entity: sensor.gan_mou_zhi_shu
+              - entity: sensor.yun_dong_zhi_shu
+              - entity: sensor.chu_xing_zhi_shu
+            type: glance
+        type: vertical-stack
+      - cards:
+          - cards:
+              - entity: sensor.processor_use
+                max: 100
+                min: 0
+                theme: default
+                type: gauge
+              - entity: sensor.disk_use
+                max: 15
+                min: 0
+                theme: default
+                type: gauge
+            type: horizontal-stack
+          - cards:
+              - entity: sensor.memory_use
+                max: 1939
+                min: 0
+                theme: default
+                type: gauge
+              - entity: sensor.swap_use_percent
+                max: 100
+                min: 0
+                theme: default
+                type: gauge
+            type: horizontal-stack
+          - entities:
+              - entity: sensor.last_boot
+              - entity: sensor.load_5m
+              - entity: sensor.speedtest_ping
+              - entity: sensor.speedtest_download
+              - entity: sensor.speedtest_upload
+            show_header_toggle: false
+            type: entities
+        title: 树莓派
+        type: vertical-stack
+      - entity: media_player.shu_mei_pai_yin_xiang
+        type: 'custom:mini-media-player'
+    icon: ''
+    panel: false
+    path: default_view
+    theme: default
+    title: 基本情况
+  - badges: []
+    cards:
+      - entity: weather.dong_cheng
+        type: weather-forecast
+      - entities:
+          - entity: sensor.shi_shi_shi_wai_wen_du
+          - entity: sensor.shi_shi_ti_gan_wen_du
+        hours_to_show: 24
+        refresh_interval: 0
+        type: history-graph
+      - entities:
+          - entity: sensor.shu_gua_du_zhi_shu
+          - entity: sensor.xi_che_zhi_shu
+          - entity: sensor.chuan_yi_zhi_shu
+          - entity: sensor.gan_mou_zhi_shu
+          - entity: sensor.yun_dong_zhi_shu
+          - entity: sensor.chu_xing_zhi_shu
+          - entity: sensor.zi_wai_xian_zhi_shu
+        show_header_toggle: false
+        theme: Backend-selected
+        title: 生活指数
+        type: entities
+      - entities:
+          - entity: sun.sun
+          - entity: sensor.jin_ri_zui_gao_wen_du
+          - entity: sensor.jin_ri_zui_di_wen_du
+          - entity: sensor.shi_shi_ti_gan_wen_du
+          - entity: sensor.shi_shi_shi_wai_wen_du
+          - entity: sensor.shi_shi_shi_wai_shi_du
+          - entity: sensor.jiang_shui_gai_lu
+          - entity: sensor.tian_qi_zhuang_tai
+          - entity: sensor.feng_li
+          - entity: sensor.feng_xiang
+          - entity: sensor.feng_su
+          - entity: sensor.neng_jian_du
+          - entity: sensor.da_qi_ya
+          - entity: sensor.jiang_shui_liang
+        show_header_toggle: false
+        title: 自然
+        type: entities
+      - entities:
+          - entity: sensor.kong_qi_zhi_liang_zhi_shu
+        hours_to_show: 24
+        refresh_interval: 0
+        type: history-graph
+      - entities:
+          - entity: sensor.pm2_5
+          - entity: sensor.pm10
+          - entity: sensor.zhu_yao_wu_ran_wu
+          - entity: sensor.kong_qi_zhi_liang_zhi_shu
+          - entity: sensor.kong_qi_zhi_liang
+        show_header_toggle: false
+        title: 空气质量
+        type: entities
+    path: ''
+    title: 天气状况

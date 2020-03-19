@@ -1,0 +1,15 @@
+notify:
+  - name: Mail
+    platform: smtp
+    server: smtp.uglyboy.cn
+    port: 465
+    timeout: 15
+    sender: notice@uglyboy.cn
+    encryption: tls
+    username: notice@uglyboy.cn
+    password: xLmHZ2BJjvDaJjJT
+    recipient:
+      - snowlemonchen@163.com
+      - uglyboy@aliyun.com
+    sender_name: 我的家庭助手
+

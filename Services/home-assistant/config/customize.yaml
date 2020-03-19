@@ -1,0 +1,10 @@
+sun.sun:
+  friendly_name: 日出日落
+vacuum.xiaomi_vacuum_cleaner:
+  friendly_name: 小米扫地机器人
+sensor.mitemp_bt_battery:
+  friendly_name: 米家蓝牙温湿度计电量
+sensor.mitemp_bt_humidity:
+  friendly_name: 米家蓝牙温湿度计湿度
+sensor.mitemp_bt_temperature:
+  friendly_name: 米家蓝牙温湿度计温度

@@ -1,0 +1,20 @@
+media_player:
+  - name: 树莓派音箱
+    platform: mpd
+    host: mpd
+
+#  - platform: emby
+#    host: emby
+#    port: 8096
+#    api_key: 3b5b54d13f494384810b391880646f16
+
+# Text to speech
+tts:
+  - platform: baidu
+    app_id: 18156926
+    api_key: QWqx8C8UfRmjXGWwrzYWTt59
+    secret_key: uwljPhmfrfaLGFBonGVl9X7EatkhxDCX
+    speed: 5
+    pitch: 5
+    volume: 15
+    person: 0

@@ -1,0 +1,69 @@
+sensor:
+  - platform: HeWeather
+    city: auto_ip
+    appkey: 8c6d2971631041738aa4bdc490354b40
+    options:
+      - fl
+      - tmp
+      - cond_txt
+      - wind_spd
+      - hum
+      - pcpn
+      - pres
+      - vis
+      - wind_sc
+      - aqi
+      - main
+      - qlty
+      - pm10
+      - pm25
+      - comf
+      - cw
+      - drsg
+      - flu
+      - sport
+      - trav
+      - uv
+      - wind_dir
+      - tmp_max
+      - tmp_min
+      - pop
+
+  - platform: template
+    sensors:
+      weather_html:
+        friendly_name: "天气概况"
+        value_template: >-
+            当前天气状况：{{states('sensor.tian_qi_zhuang_tai')}}；<br>
+            当前室外空气质量指数为 {{states('sensor.kong_qi_zhi_liang_zhi_shu')}}AQI，空气质量 {{states('sensor.kong_qi_zhi_liang')}}<br>
+            当前风力 {{states('sensor.feng_li')}}级；<br>
+            紫外强度：{{states('sensor.zi_wai_xian_zhi_shu')}}，{{state_attr('sensor.zi_wai_xian_zhi_shu','生活建议')}}<br>
+            感冒概率：{{states('sensor.gan_mou_zhi_shu')}}，{{state_attr('sensor.gan_mou_zhi_shu','生活建议')}}<br>
+            运动建议：{{states('sensor.yun_dong_zhi_shu')}}，{{state_attr('sensor.yun_dong_zhi_shu','生活建议')}}<br>
+            穿衣建议：{{states('sensor.chuan_yi_zhi_shu')}}，{{state_attr('sensor.chuan_yi_zhi_shu','生活建议')}}<br>
+            {%- if states.sensor.jiang_shui_gai_lu.state | float >= 0 and states.sensor.jiang_shui_liang.state | float > 0 and states.sensor.jiang_shui_liang.state | float < 0.05 -%}
+            最后请留意以下雨情：未来8小时下雨几率很小；<br>
+            {%- elif states.sensor.jiang_shui_gai_lu.state | float > 0 and states.sensor.jiang_shui_liang.state | float > 0.05 and states.sensor.jiang_shui_liang.state | float < 0.9 -%}
+            最后请留意以下雨情：未来8小时内可能会下小雨；<br>
+            {%- elif states.sensor.jiang_shui_gai_lu.state | float > 0 and states.sensor.jiang_shui_liang.state | float > 0.9 and states.sensor.jiang_shui_liang.state | float < 2.87 -%}
+            最后请留意以下雨情：未来8小时内可能会下中雨；<br>
+            {%- elif states.sensor.jiang_shui_gai_lu.state | float > 0 and states.sensor.jiang_shui_liang.state | float > 2.87  -%}
+            最后请留意以下雨情：未来8小时内可能会下好大的雨呀；<br>
+            {%- endif %}
+
+  - platform: systemmonitor
+    resources:
+      - type: disk_use
+        arg: /
+      - type: memory_use
+      - type: swap_use_percent
+      - type: load_5m
+      - type: processor_use
+      - type: last_boot
+
+#  - platform: mitemp_bt
+#    mac: '4C:65:A8:D5:66:F8'
+#    monitored_conditions:
+#      - temperature
+#      - humidity
+#      - battery

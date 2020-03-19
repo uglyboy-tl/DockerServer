@@ -1,0 +1,151 @@
+# ------------------------------------------------------------------------------ #
+# 基础设置 https://www.home-assistant.io/docs/configuration/basic/
+# ------------------------------------------------------------------------------ #
+homeassistant:
+  customize: !include customize.yaml
+  # 名字按照自己的来吧
+  name: !secret name
+  # 位置
+  unit_system: metric
+  time_zone: !secret time_zone
+  packages: !include_dir_named packages
+  #whitelist_external_dirs:
+  #  - !secret motion_dir
+  #  - !secret recording_dir
+
+scene: !include scenes.yaml
+
+# ------------------------------------------------------------------------------ #
+# 显示系统运行状态 https://www.home-assistant.io/components/system_health
+# ------------------------------------------------------------------------------ #
+system_health:
+
+# ------------------------------------------------------------------------------ #
+# 前端显示设置 https://www.home-assistant.io/components/frontend/
+# ------------------------------------------------------------------------------ #
+frontend:
+  # 我建了个themes目录里面是各种主题
+  themes: !include_dir_named themes
+
+# ------------------------------------------------------------------------------ #
+# 侧边栏 https://www.home-assistant.io/components/panel_iframe/
+# ------------------------------------------------------------------------------ #
+# 已经由插件进行管理了
+# ------------------------------------------------------------------------------ #
+# lovelace 界面 https://www.home-assistant.io/lovelace
+# 下方设置需要配合 ui-lovelace.yaml 使用，进行 lovelace 相关配置
+# ------------------------------------------------------------------------------ #
+#lovelace:
+#  mode: yaml
+
+# ------------------------------------------------------------------------------ #
+# 在侧边栏显示配置菜单 https://www.home-assistant.io/components/config/
+# ------------------------------------------------------------------------------ #
+config:
+
+# ------------------------------------------------------------------------------ #
+# 云 相关 https://www.home-assistant.io/components/cloud/
+# ------------------------------------------------------------------------------ #
+cloud:
+
+# ------------------------------------------------------------------------------ #
+# 用户相关 (设备追踪等) https://www.home-assistant.io/components/person/
+# ------------------------------------------------------------------------------ #
+person:
+
+# ------------------------------------------------------------------------------ #
+# 分组 https://www.home-assistant.io/components/group/
+# ------------------------------------------------------------------------------ #
+#group: !include_dir_merge_named group
+group: !include groups.yaml
+
+# ------------------------------------------------------------------------------ #
+# 自动化 https://www.home-assistant.io/components/automation/
+# ------------------------------------------------------------------------------ #
+automation: !include automations.yaml
+
+# ------------------------------------------------------------------------------ #
+# 脚本 https://www.home-assistant.io/components/script/
+# ------------------------------------------------------------------------------ #
+script: !include scripts.yaml
+
+# ------------------------------------------------------------------------------ #
+# mqtt 相关配置 https://www.home-assistant.io/components/mqtt/
+# ------------------------------------------------------------------------------ #
+mqtt:
+  broker: !secret mqtt_broker
+  port: !secret mqtt_prot
+
+  # 配置自动发现
+  discovery: true
+  # 自动发现使用的主题位置前缀，缺省为homeassistant
+  discovery_prefix: homeassistant
+
+# ------------------------------------------------------------------------------ #
+# 网络相关配置 https://www.home-assistant.io/components/http/
+# ------------------------------------------------------------------------------ #
+http:
+  # 默认只接受 IPv4 访问，如果要使用 IPv6 访问，取消注释，二者只能选一种
+#  server_host: ::0
+  server_port: 8123
+  # 外网地址，配合 iOS app 使用效果更佳
+  base_url: !secret base_url
+  ssl_certificate: /config/ssl/2722148_uglyboy.cn.pem
+  ssl_key: /config/ssl/2722148_uglyboy.cn.key
+  # 跨站点请求
+  cors_allowed_origins:
+    - !secret base_url
+#    - https://www.home-assistant.io
+  # 启用 XFF 请求头，配合代理配置使用，默认 False
+#  use_x_forwarded_for: true
+  # 信任的代理
+#  trusted_proxies:
+#    - 127.0.0.1
+#    - ::1
+  # 启用账密穷举保护机制
+  ip_ban_enabled: true
+  # 输错密码次数
+  login_attempts_threshold: 5
+
+# ------------------------------------------------------------------------------ #
+# 检查更新 https://www.home-assistant.io/components/updater/
+# ------------------------------------------------------------------------------ #
+#updater:
+  # 包含已使用的插件
+#   include_used_components: true
+
+# ------------------------------------------------------------------------------ #
+# 数据记录 https://www.home-assistant.io/components/recorder/
+# 默认存储位置 home-assistant_v2.db
+# ------------------------------------------------------------------------------ #
+recorder: !include recorder.yaml
+
+# ------------------------------------------------------------------------------ #
+# 在侧边栏显示历史菜单 https://www.home-assistant.io/components/history/
+# 依赖 recorder 设置，history 中设置的必须在 recorder 内有，不然没有数据显示
+# ------------------------------------------------------------------------------ #
+history: !include history.yaml
+
+# ------------------------------------------------------------------------------ #
+# 控制台打印的日志信息 https://www.home-assistant.io/components/logger/
+# 也会保存在 home-assistant.log
+# ------------------------------------------------------------------------------ #
+logger: !include logger.yaml
+
+# ------------------------------------------------------------------------------ #
+# 在侧边栏显示日志菜单 https://www.home-assistant.io/components/logbook/
+# ------------------------------------------------------------------------------ #
+#logbook: !include logbook.yaml
+
+# ------------------------------------------------------------------------------ #
+# 地图 https://www.home-assistant.io/components/map/
+# ------------------------------------------------------------------------------ #
+#map:
+
+# ------------------------------------------------------------------------------ #
+# 辅助元素 https://www.home-assistant.io/components/map/
+# ------------------------------------------------------------------------------ #
+input_text:
+input_number:
+input_select:
+input_datetime:

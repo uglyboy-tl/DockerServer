@@ -1,0 +1,20 @@
+raspberryPi:
+  name: "树莓派状态"
+  icon: mdi:raspberry-pi
+  entities:
+  - sensor.last_boot
+  - sensor.processor_use
+  - sensor.memory_use
+  - sensor.swap_use_percent
+  - sensor.disk_use
+  - sensor.speedtest_ping
+  - sensor.speedtest_download
+
+#mitemp_bt:
+#  name: "米家蓝牙温湿度计"
+#  icon: mdi:oil-temperature
+#  view: false
+#  entities:
+#    - sensor.mitemp_bt_temperature
+#    - sensor.mitemp_bt_humidity
+#    - sensor.mitemp_bt_battery

@@ -1,0 +1,240 @@
+2020-03-19 17:56:59 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for aligenie which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-03-19 17:56:59 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for ha_sidebar which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-03-19 17:56:59 INFO (MainThread) [homeassistant.setup] Setup of domain logger took 0.0 seconds.
+2020-03-19 17:56:59 INFO (MainThread) [homeassistant.setup] Setting up http
+2020-03-19 17:56:59 INFO (MainThread) [homeassistant.setup] Setup of domain http took 0.0 seconds.
+2020-03-19 17:56:59 INFO (MainThread) [homeassistant.setup] Setting up system_log
+2020-03-19 17:56:59 INFO (MainThread) [homeassistant.setup] Setup of domain system_log took 0.0 seconds.
+2020-03-19 17:57:00 INFO (MainThread) [homeassistant.setup] Setting up recorder
+2020-03-19 17:57:00 INFO (MainThread) [homeassistant.setup] Setting up webhook
+2020-03-19 17:57:00 INFO (MainThread) [homeassistant.setup] Setup of domain webhook took 0.0 seconds.
+2020-03-19 17:57:00 INFO (MainThread) [homeassistant.setup] Setting up alexa
+2020-03-19 17:57:00 INFO (MainThread) [homeassistant.setup] Setup of domain alexa took 0.0 seconds.
+2020-03-19 17:57:00 INFO (MainThread) [homeassistant.setup] Setup of domain recorder took 0.7 seconds.
+2020-03-19 17:57:00 INFO (SyncWorker_15) [homeassistant.loader] Loaded google_assistant from homeassistant.components.google_assistant
+2020-03-19 17:57:00 INFO (SyncWorker_7) [homeassistant.loader] Loaded camera from homeassistant.components.camera
+2020-03-19 17:57:00 INFO (SyncWorker_15) [homeassistant.loader] Loaded logbook from homeassistant.components.logbook
+2020-03-19 17:57:00 INFO (SyncWorker_2) [homeassistant.loader] Loaded homekit from homeassistant.components.homekit
+2020-03-19 17:57:00 INFO (SyncWorker_6) [homeassistant.loader] Loaded ssdp from homeassistant.components.ssdp
+2020-03-19 17:57:00 INFO (SyncWorker_10) [homeassistant.loader] Loaded zeroconf from homeassistant.components.zeroconf
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up cloud
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setup of domain cloud took 0.2 seconds.
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up input_datetime
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up scene
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.components.scene] Setting up scene.homeassistant
+2020-03-19 17:57:03 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for HeWeather which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-03-19 17:57:03 INFO (SyncWorker_3) [homeassistant.loader] Loaded smtp from homeassistant.components.smtp
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up sun
+2020-03-19 17:57:03 INFO (SyncWorker_13) [homeassistant.loader] Loaded template from homeassistant.components.template
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setup of domain sun took 0.0 seconds.
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up speedtestdotnet
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setup of domain speedtestdotnet took 0.0 seconds.
+2020-03-19 17:57:03 INFO (SyncWorker_19) [homeassistant.loader] Loaded xiaomi_miio from homeassistant.components.xiaomi_miio
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up input_text
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up met
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setup of domain met took 0.0 seconds.
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up lovelace
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up script
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up input_select
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up input_number
+2020-03-19 17:57:03 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for he_weather which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up weather
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up group
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up zone
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up ha_sidebar
+2020-03-19 17:57:03 INFO (MainThread) [homeassistant.setup] Setting up aligenie
+2020-03-19 17:57:03 INFO (SyncWorker_12) [custom_components.ha_sidebar] 
+-------------------------------------------------------------------
+    侧边栏管理【作者QQ：635147515】
+    
+    版本：1.5.6    
+        
+    项目地址：https://github.com/shaonianzhentan/ha_sidebar
+-------------------------------------------------------------------
+2020-03-19 17:57:06 INFO (MainThread) [homeassistant.setup] Setup of domain aligenie took 2.8 seconds.
+2020-03-19 17:57:06 INFO (MainThread) [homeassistant.components.weather] Setting up weather.he_weather
+2020-03-19 17:57:06 INFO (MainThread) [homeassistant.setup] Setting up person
+2020-03-19 17:57:06 INFO (MainThread) [homeassistant.setup] Setting up notify
+2020-03-19 17:57:06 INFO (SyncWorker_10) [homeassistant.loader] Loaded systemmonitor from homeassistant.components.systemmonitor
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up vacuum
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain ha_sidebar took 3.4 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up history
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain history took 0.0 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up api
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up system_health
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain system_health took 0.0 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.components.notify] Setting up notify.smtp
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.components.vacuum] Setting up vacuum.xiaomi_miio
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain script took 3.5 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up websocket_api
+2020-03-19 17:57:07 INFO (SyncWorker_13) [homeassistant.loader] Loaded mpd from homeassistant.components.mpd
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain websocket_api took 0.0 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up device_automation
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain device_automation took 0.0 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain group took 3.5 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up config
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain input_datetime took 3.7 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain scene took 3.7 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up sensor
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.components.xiaomi_miio.vacuum] Initializing with host 192.168.0.104 (token 6e786...)
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain input_text took 3.7 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain lovelace took 3.6 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain input_select took 3.6 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain input_number took 3.6 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up auth
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain auth took 0.0 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain api took 0.3 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.components.sensor] Setting up sensor.systemmonitor
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.components.sensor] Setting up sensor.HeWeather
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.components.sensor] Setting up sensor.template
+2020-03-19 17:57:07 INFO (SyncWorker_8) [custom_components.HeWeather.sensor] Setup platform sensor.HeWeather
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up media_player
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up search
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain search took 0.0 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up mqtt
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain mqtt took 0.0 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.components.media_player] Setting up media_player.mpd
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain config took 0.5 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain zone took 4.0 seconds.
+2020-03-19 17:57:07 INFO (SyncWorker_0) [mpd.base] Calling MPD connect('mpd', 6600, timeout=None)
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain notify took 1.2 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setting up device_tracker
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain device_tracker took 0.0 seconds.
+2020-03-19 17:57:07 INFO (MainThread) [homeassistant.setup] Setup of domain weather took 4.1 seconds.
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.components.weather] Setting up weather.met
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.setup] Setup of domain person took 1.3 seconds.
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.setup] Setting up onboarding
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.setup] Setup of domain media_player took 0.5 seconds.
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.setup] Setup of domain onboarding took 0.1 seconds.
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.setup] Setup of domain vacuum took 1.0 seconds.
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.setup] Setting up frontend
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.setup] Setup of domain frontend took 0.0 seconds.
+2020-03-19 17:57:08 INFO (SyncWorker_10) [custom_components.HeWeather.sensor] Update from HeWeather...
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.setup] Setup of domain sensor took 1.3 seconds.
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.components.sensor] Setting up sensor.speedtestdotnet
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.setup] Setting up automation
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.setup] Setup of domain automation took 0.0 seconds.
+2020-03-19 17:57:08 INFO (SyncWorker_12) [homeassistant.loader] Loaded baidu from homeassistant.components.baidu
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.setup] Setting up tts
+2020-03-19 17:57:08 INFO (MainThread) [homeassistant.setup] Setup of domain tts took 0.0 seconds.
+2020-03-19 17:57:18 WARNING (MainThread) [homeassistant.components.weather] Setup of weather platform met is taking over 10 seconds.
+2020-03-19 17:57:18 ERROR (MainThread) [metno] https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/1.9/ returned 
+2020-03-19 17:57:18 ERROR (MainThread) [homeassistant.components.met.weather] Retrying in 16 minutes
+2020-03-19 17:57:18 INFO (MainThread) [homeassistant.bootstrap] Home Assistant initialized in 18.69s
+2020-03-19 17:57:18 INFO (MainThread) [homeassistant.core] Starting Home Assistant
+2020-03-19 17:57:18 INFO (MainThread) [homeassistant.components.automation] Initialized trigger 天气播报
+2020-03-19 17:57:18 INFO (MainThread) [homeassistant.components.automation] Initialized trigger HTML测试
+2020-03-19 17:57:18 INFO (MainThread) [homeassistant.core] Timer:starting
+2020-03-19 17:57:21 INFO (SyncWorker_11) [homeassistant.loader] Loaded geonetnz_quakes from homeassistant.components.geonetnz_quakes
+2020-03-19 17:57:22 INFO (SyncWorker_7) [homeassistant.loader] Loaded coronavirus from homeassistant.components.coronavirus
+2020-03-19 17:57:22 INFO (SyncWorker_0) [homeassistant.loader] Loaded luftdaten from homeassistant.components.luftdaten
+2020-03-19 17:57:22 INFO (SyncWorker_9) [homeassistant.loader] Loaded dialogflow from homeassistant.components.dialogflow
+2020-03-19 17:57:22 INFO (SyncWorker_5) [homeassistant.loader] Loaded zha from homeassistant.components.zha
+2020-03-19 17:57:22 INFO (SyncWorker_16) [homeassistant.loader] Loaded mailgun from homeassistant.components.mailgun
+2020-03-19 17:57:22 INFO (SyncWorker_6) [homeassistant.loader] Loaded neato from homeassistant.components.neato
+2020-03-19 17:57:22 INFO (SyncWorker_13) [homeassistant.loader] Loaded tellduslive from homeassistant.components.tellduslive
+2020-03-19 17:57:22 INFO (SyncWorker_12) [homeassistant.loader] Loaded airly from homeassistant.components.airly
+2020-03-19 17:57:22 INFO (SyncWorker_3) [homeassistant.loader] Loaded tesla from homeassistant.components.tesla
+2020-03-19 17:57:22 INFO (SyncWorker_8) [homeassistant.loader] Loaded heos from homeassistant.components.heos
+2020-03-19 17:57:22 INFO (SyncWorker_18) [homeassistant.loader] Loaded solaredge from homeassistant.components.solaredge
+2020-03-19 17:57:22 INFO (SyncWorker_2) [homeassistant.loader] Loaded cert_expiry from homeassistant.components.cert_expiry
+2020-03-19 17:57:22 INFO (SyncWorker_15) [homeassistant.loader] Loaded owntracks from homeassistant.components.owntracks
+2020-03-19 17:57:22 INFO (SyncWorker_14) [homeassistant.loader] Loaded vesync from homeassistant.components.vesync
+2020-03-19 17:57:22 INFO (SyncWorker_17) [homeassistant.loader] Loaded zwave from homeassistant.components.zwave
+2020-03-19 17:57:22 INFO (SyncWorker_1) [homeassistant.loader] Loaded ipma from homeassistant.components.ipma
+2020-03-19 17:57:22 INFO (SyncWorker_4) [homeassistant.loader] Loaded simplisafe from homeassistant.components.simplisafe
+2020-03-19 17:57:22 INFO (SyncWorker_19) [homeassistant.loader] Loaded sentry from homeassistant.components.sentry
+2020-03-19 17:57:22 INFO (SyncWorker_11) [homeassistant.loader] Loaded almond from homeassistant.components.almond
+2020-03-19 17:57:22 INFO (SyncWorker_10) [homeassistant.loader] Loaded soma from homeassistant.components.soma
+2020-03-19 17:57:22 INFO (SyncWorker_7) [homeassistant.loader] Loaded garmin_connect from homeassistant.components.garmin_connect
+2020-03-19 17:57:22 INFO (SyncWorker_0) [homeassistant.loader] Loaded plex from homeassistant.components.plex
+2020-03-19 17:57:22 INFO (SyncWorker_9) [homeassistant.loader] Loaded meteo_france from homeassistant.components.meteo_france
+2020-03-19 17:57:22 INFO (SyncWorker_5) [homeassistant.loader] Loaded rainmachine from homeassistant.components.rainmachine
+2020-03-19 17:57:22 INFO (SyncWorker_16) [homeassistant.loader] Loaded locative from homeassistant.components.locative
+2020-03-19 17:57:22 INFO (SyncWorker_6) [homeassistant.loader] Loaded elgato from homeassistant.components.elgato
+2020-03-19 17:57:22 INFO (SyncWorker_13) [homeassistant.loader] Loaded brother from homeassistant.components.brother
+2020-03-19 17:57:22 INFO (SyncWorker_12) [homeassistant.loader] Loaded minecraft_server from homeassistant.components.minecraft_server
+2020-03-19 17:57:22 INFO (SyncWorker_3) [homeassistant.loader] Loaded traccar from homeassistant.components.traccar
+2020-03-19 17:57:22 INFO (SyncWorker_8) [homeassistant.loader] Loaded coolmaster from homeassistant.components.coolmaster
+2020-03-19 17:57:22 INFO (SyncWorker_18) [homeassistant.loader] Loaded wwlln from homeassistant.components.wwlln
+2020-03-19 17:57:22 INFO (SyncWorker_2) [homeassistant.loader] Loaded smhi from homeassistant.components.smhi
+2020-03-19 17:57:22 INFO (SyncWorker_15) [homeassistant.loader] Loaded nest from homeassistant.components.nest
+2020-03-19 17:57:22 INFO (SyncWorker_14) [homeassistant.loader] Loaded samsungtv from homeassistant.components.samsungtv
+2020-03-19 17:57:22 INFO (SyncWorker_17) [homeassistant.loader] Loaded izone from homeassistant.components.izone
+2020-03-19 17:57:22 INFO (SyncWorker_1) [homeassistant.loader] Loaded point from homeassistant.components.point
+2020-03-19 17:57:22 INFO (SyncWorker_4) [homeassistant.loader] Loaded axis from homeassistant.components.axis
+2020-03-19 17:57:22 INFO (SyncWorker_19) [homeassistant.loader] Loaded iaqualink from homeassistant.components.iaqualink
+2020-03-19 17:57:22 INFO (SyncWorker_11) [homeassistant.loader] Loaded griddy from homeassistant.components.griddy
+2020-03-19 17:57:22 INFO (SyncWorker_10) [homeassistant.loader] Loaded upnp from homeassistant.components.upnp
+2020-03-19 17:57:22 INFO (SyncWorker_7) [homeassistant.loader] Loaded sonos from homeassistant.components.sonos
+2020-03-19 17:57:22 INFO (SyncWorker_0) [homeassistant.loader] Loaded wemo from homeassistant.components.wemo
+2020-03-19 17:57:22 INFO (SyncWorker_9) [homeassistant.loader] Loaded ambient_station from homeassistant.components.ambient_station
+2020-03-19 17:57:22 INFO (SyncWorker_5) [homeassistant.loader] Loaded ios from homeassistant.components.ios
+2020-03-19 17:57:22 INFO (SyncWorker_16) [homeassistant.loader] Loaded toon from homeassistant.components.toon
+2020-03-19 17:57:22 INFO (SyncWorker_6) [homeassistant.loader] Loaded opentherm_gw from homeassistant.components.opentherm_gw
+2020-03-19 17:57:22 INFO (SyncWorker_13) [homeassistant.loader] Loaded somfy from homeassistant.components.somfy
+2020-03-19 17:57:22 INFO (SyncWorker_12) [homeassistant.loader] Loaded wled from homeassistant.components.wled
+2020-03-19 17:57:22 INFO (SyncWorker_11) [homeassistant.loader] Loaded geofency from homeassistant.components.geofency
+2020-03-19 17:57:22 INFO (SyncWorker_8) [homeassistant.loader] Loaded tradfri from homeassistant.components.tradfri
+2020-03-19 17:57:22 INFO (SyncWorker_7) [homeassistant.loader] Loaded ring from homeassistant.components.ring
+2020-03-19 17:57:22 INFO (SyncWorker_2) [homeassistant.loader] Loaded sense from homeassistant.components.sense
+2020-03-19 17:57:22 INFO (SyncWorker_15) [homeassistant.loader] Loaded glances from homeassistant.components.glances
+2020-03-19 17:57:22 INFO (SyncWorker_5) [homeassistant.loader] Loaded huawei_lte from homeassistant.components.huawei_lte
+2020-03-19 17:57:22 INFO (SyncWorker_17) [homeassistant.loader] Loaded melcloud from homeassistant.components.melcloud
+2020-03-19 17:57:22 INFO (SyncWorker_1) [homeassistant.loader] Loaded twilio from homeassistant.components.twilio
+2020-03-19 17:57:22 INFO (SyncWorker_4) [homeassistant.loader] Loaded mikrotik from homeassistant.components.mikrotik
+2020-03-19 17:57:22 INFO (SyncWorker_19) [homeassistant.loader] Loaded spotify from homeassistant.components.spotify
+2020-03-19 17:57:22 INFO (SyncWorker_3) [homeassistant.loader] Loaded homekit_controller from homeassistant.components.homekit_controller
+2020-03-19 17:57:22 INFO (SyncWorker_10) [homeassistant.loader] Loaded unifi from homeassistant.components.unifi
+2020-03-19 17:57:22 INFO (SyncWorker_18) [homeassistant.loader] Loaded mobile_app from homeassistant.components.mobile_app
+2020-03-19 17:57:22 INFO (SyncWorker_0) [homeassistant.loader] Loaded vizio from homeassistant.components.vizio
+2020-03-19 17:57:22 INFO (SyncWorker_9) [homeassistant.loader] Loaded local_ip from homeassistant.components.local_ip
+2020-03-19 17:57:22 INFO (SyncWorker_14) [homeassistant.loader] Loaded starline from homeassistant.components.starline
+2020-03-19 17:57:22 INFO (SyncWorker_16) [homeassistant.loader] Loaded gpslogger from homeassistant.components.gpslogger
+2020-03-19 17:57:22 INFO (SyncWorker_6) [homeassistant.loader] Loaded hisense_aehw4a1 from homeassistant.components.hisense_aehw4a1
+2020-03-19 17:57:22 INFO (SyncWorker_13) [homeassistant.loader] Loaded geonetnz_volcano from homeassistant.components.geonetnz_volcano
+2020-03-19 17:57:22 INFO (SyncWorker_12) [homeassistant.loader] Loaded cast from homeassistant.components.cast
+2020-03-19 17:57:22 INFO (SyncWorker_3) [homeassistant.loader] Loaded tplink from homeassistant.components.tplink
+2020-03-19 17:57:22 INFO (SyncWorker_8) [homeassistant.loader] Loaded esphome from homeassistant.components.esphome
+2020-03-19 17:57:22 INFO (SyncWorker_18) [homeassistant.loader] Loaded august from homeassistant.components.august
+2020-03-19 17:57:22 INFO (SyncWorker_2) [homeassistant.loader] Loaded hangouts from homeassistant.components.hangouts
+2020-03-19 17:57:22 INFO (SyncWorker_15) [homeassistant.loader] Loaded twentemilieu from homeassistant.components.twentemilieu
+2020-03-19 17:57:22 INFO (SyncWorker_14) [homeassistant.loader] Loaded ambiclimate from homeassistant.components.ambiclimate
+2020-03-19 17:57:22 INFO (SyncWorker_17) [homeassistant.loader] Loaded smartthings from homeassistant.components.smartthings
+2020-03-19 17:57:22 INFO (SyncWorker_1) [homeassistant.loader] Loaded ecobee from homeassistant.components.ecobee
+2020-03-19 17:57:22 INFO (SyncWorker_4) [homeassistant.loader] Loaded logi_circle from homeassistant.components.logi_circle
+2020-03-19 17:57:22 INFO (SyncWorker_19) [homeassistant.loader] Loaded shopping_list from homeassistant.components.shopping_list
+2020-03-19 17:57:22 INFO (SyncWorker_11) [homeassistant.loader] Loaded openuv from homeassistant.components.openuv
+2020-03-19 17:57:22 INFO (SyncWorker_10) [homeassistant.loader] Loaded dynalite from homeassistant.components.dynalite
+2020-03-19 17:57:22 INFO (SyncWorker_7) [homeassistant.loader] Loaded withings from homeassistant.components.withings
+2020-03-19 17:57:22 INFO (SyncWorker_0) [homeassistant.loader] Loaded lifx from homeassistant.components.lifx
+2020-03-19 17:57:22 INFO (SyncWorker_9) [homeassistant.loader] Loaded hue from homeassistant.components.hue
+2020-03-19 17:57:22 INFO (SyncWorker_5) [homeassistant.loader] Loaded ifttt from homeassistant.components.ifttt
+2020-03-19 17:57:22 INFO (SyncWorker_16) [homeassistant.loader] Loaded plaato from homeassistant.components.plaato
+2020-03-19 17:57:22 INFO (SyncWorker_6) [homeassistant.loader] Loaded gios from homeassistant.components.gios
+2020-03-19 17:57:22 INFO (SyncWorker_13) [homeassistant.loader] Loaded gdacs from homeassistant.components.gdacs
+2020-03-19 17:57:22 INFO (SyncWorker_12) [homeassistant.loader] Loaded homematicip_cloud from homeassistant.components.homematicip_cloud
+2020-03-19 17:57:22 INFO (SyncWorker_3) [homeassistant.loader] Loaded deconz from homeassistant.components.deconz
+2020-03-19 17:57:22 INFO (SyncWorker_8) [homeassistant.loader] Loaded airvisual from homeassistant.components.airvisual
+2020-03-19 17:57:22 INFO (SyncWorker_7) [homeassistant.loader] Loaded linky from homeassistant.components.linky
+2020-03-19 17:57:22 INFO (SyncWorker_2) [homeassistant.loader] Loaded iqvia from homeassistant.components.iqvia
+2020-03-19 17:57:22 INFO (SyncWorker_15) [homeassistant.loader] Loaded directv from homeassistant.components.directv
+2020-03-19 17:57:22 INFO (SyncWorker_5) [homeassistant.loader] Loaded velbus from homeassistant.components.velbus
+2020-03-19 17:57:22 INFO (SyncWorker_17) [homeassistant.loader] Loaded notion from homeassistant.components.notion
+2020-03-19 17:57:22 INFO (SyncWorker_1) [homeassistant.loader] Loaded life360 from homeassistant.components.life360
+2020-03-19 17:57:22 INFO (SyncWorker_4) [homeassistant.loader] Loaded daikin from homeassistant.components.daikin
+2020-03-19 17:57:22 INFO (SyncWorker_19) [homeassistant.loader] Loaded ps4 from homeassistant.components.ps4
+2020-03-19 17:57:22 INFO (SyncWorker_11) [homeassistant.loader] Loaded abode from homeassistant.components.abode
+2020-03-19 17:57:22 INFO (SyncWorker_10) [homeassistant.loader] Loaded adguard from homeassistant.components.adguard
+2020-03-19 17:57:22 INFO (SyncWorker_18) [homeassistant.loader] Loaded icloud from homeassistant.components.icloud
+2020-03-19 17:57:22 INFO (SyncWorker_0) [homeassistant.loader] Loaded transmission from homeassistant.components.transmission
+2020-03-19 17:57:22 INFO (SyncWorker_9) [homeassistant.loader] Loaded vilfo from homeassistant.components.vilfo
+2020-03-19 17:57:22 INFO (SyncWorker_14) [homeassistant.loader] Loaded emulated_roku from homeassistant.components.emulated_roku
+2020-03-19 17:57:22 INFO (SyncWorker_17) [homeassistant.loader] Loaded solarlog from homeassistant.components.solarlog
+2020-03-19 17:57:22 INFO (SyncWorker_16) [homeassistant.loader] Loaded konnected from homeassistant.components.konnected
+2020-03-19 17:57:22 INFO (SyncWorker_4) [homeassistant.loader] Loaded netatmo from homeassistant.components.netatmo
+2020-03-19 17:59:23 ERROR (MainThread) [frontend.js.latest.202003181] https://uglyboy.cn:8123/lovelace/hass-unused-entities:0:0 ResizeObserver loop limit exceeded
+2020-03-19 17:59:31 ERROR (MainThread) [frontend.js.latest.202003181] https://uglyboy.cn:8123/lovelace/hass-unused-entities:0:0 ResizeObserver loop limit exceeded
+2020-03-19 17:59:44 ERROR (MainThread) [frontend.js.latest.202003181] https://uglyboy.cn:8123/lovelace/hass-unused-entities:0:0 ResizeObserver loop limit exceeded
+2020-03-19 18:00:44 INFO (MainThread) [homeassistant.components.script] 测试语音: Running script
+2020-03-19 18:00:44 INFO (MainThread) [homeassistant.components.script] 测试语音: Executing step call service

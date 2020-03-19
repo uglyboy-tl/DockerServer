@@ -1,0 +1,37 @@
+version: '2'
+
+volumes:
+  mpd_data:
+
+services :
+  mpd:
+    image: gists/mpd
+    container_name: mpd
+    restart: unless-stopped
+    devices:
+      - /dev/snd
+    volumes:
+      - ./conf/mpd.conf:/etc/mpd.conf
+      - mpd_data:/var/lib/mpd/
+
+  mqtt:
+    image: eclipse-mosquitto
+    container_name: mqtt
+    restart: unless-stopped
+    ports:
+      - 1883:1883
+      - 9001:9001
+
+  home-assistant:
+    image: homeassistant/home-assistant
+    container_name: HASS
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./config:/config
+    depends_on:
+      - mqtt
+      - mpd
+    ports:
+      - 8123:8123
