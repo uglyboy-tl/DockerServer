@@ -13,6 +13,8 @@ services :
     volumes:
       - ./conf/mpd.conf:/etc/mpd.conf
       - mpd_data:/var/lib/mpd/
+    ports:
+      - 6600:6600
 
   mqtt:
     image: eclipse-mosquitto
@@ -30,8 +32,5 @@ services :
       - TZ=Asia/Shanghai
     volumes:
       - ./config:/config
-    depends_on:
-      - mqtt
-      - mpd
     ports:
       - 8123:8123

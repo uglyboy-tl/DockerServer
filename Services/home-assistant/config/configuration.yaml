@@ -85,26 +85,14 @@ mqtt:
 # 网络相关配置 https://www.home-assistant.io/components/http/
 # ------------------------------------------------------------------------------ #
 http:
-  # 默认只接受 IPv4 访问，如果要使用 IPv6 访问，取消注释，二者只能选一种
-#  server_host: ::0
   server_port: 8123
-  # 外网地址，配合 iOS app 使用效果更佳
   base_url: !secret base_url
   ssl_certificate: /config/ssl/2722148_uglyboy.cn.pem
   ssl_key: /config/ssl/2722148_uglyboy.cn.key
   # 跨站点请求
   cors_allowed_origins:
     - !secret base_url
-#    - https://www.home-assistant.io
-  # 启用 XFF 请求头，配合代理配置使用，默认 False
-#  use_x_forwarded_for: true
-  # 信任的代理
-#  trusted_proxies:
-#    - 127.0.0.1
-#    - ::1
-  # 启用账密穷举保护机制
   ip_ban_enabled: true
-  # 输错密码次数
   login_attempts_threshold: 5
 
 # ------------------------------------------------------------------------------ #

@@ -1,12 +1,7 @@
 media_player:
   - name: 树莓派音箱
     platform: mpd
-    host: mpd
-
-#  - platform: emby
-#    host: emby
-#    port: 8096
-#    api_key: 3b5b54d13f494384810b391880646f16
+    host: uglyboy.cn
 
 # Text to speech
 tts:

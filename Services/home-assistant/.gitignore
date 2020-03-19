@@ -1,3 +1,4 @@
 config/.*
 tts/
 *__pycache__*
+home-assistant.log
