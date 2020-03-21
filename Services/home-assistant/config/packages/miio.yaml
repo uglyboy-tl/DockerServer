@@ -1,4 +1,0 @@
-vacuum:
-  - platform: xiaomi_miio
-    host: 192.168.0.104
-    token: 6e786e495036783046504e6c5833764d

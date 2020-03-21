@@ -34,6 +34,9 @@ sensor:
       weather_html:
         friendly_name: "天气概况"
         value_template: >-
+          {{states('sensor.tian_qi_zhuang_tai')}}
+        attribute_templates: 
+          '生活建议': >-
             当前天气状况：{{states('sensor.tian_qi_zhuang_tai')}}；<br>
             当前室外空气质量指数为 {{states('sensor.kong_qi_zhi_liang_zhi_shu')}}AQI，空气质量 {{states('sensor.kong_qi_zhi_liang')}}<br>
             当前风力 {{states('sensor.feng_li')}}级；<br>
@@ -60,10 +63,3 @@ sensor:
       - type: load_5m
       - type: processor_use
       - type: last_boot
-
-#  - platform: mitemp_bt
-#    mac: '4C:65:A8:D5:66:F8'
-#    monitored_conditions:
-#      - temperature
-#      - humidity
-#      - battery

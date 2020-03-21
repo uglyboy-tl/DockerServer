@@ -2,6 +2,8 @@ version: '2'
 
 volumes:
   mpd_data:
+  mqtt_data:
+  mqtt_log:
 
 services :
   mpd:
@@ -20,6 +22,9 @@ services :
     image: eclipse-mosquitto
     container_name: mqtt
     restart: unless-stopped
+    volumes:
+      - mqtt_data:/mosquitto/data
+      - mqtt_log:/mosquitto/log
     ports:
       - 1883:1883
       - 9001:9001
@@ -30,7 +35,9 @@ services :
     restart: unless-stopped
     environment:
       - TZ=Asia/Shanghai
+    #privileged: true
     volumes:
       - ./config:/config
+    #network_mode: host
     ports:
       - 8123:8123

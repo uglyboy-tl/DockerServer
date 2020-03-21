@@ -40,13 +40,13 @@ services :
       - 139:139
       - 445:445
     volumes:
-      - /mnt/public/samba:/share/samba
+      - /mnt/public/Cloud:/share/Cloud
       - /mnt/public/Media:/share/Media
     command:
       - "-u"
       - "uglyboy:zudhr4ed"
       - "-s"
-      - "分享:/share/samba:rw:uglyboy"
+      - "分享:/share/Cloud:rw:uglyboy"
       - "-s"
       - "影视:/share/Media:rw:uglyboy"
 

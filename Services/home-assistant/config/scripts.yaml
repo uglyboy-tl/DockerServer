@@ -4,5 +4,5 @@
   - data:
       cache: true
       entity_id: media_player.shu_mei_pai_yin_xiang
-      message: '{{state_attr(''sensor.yun_dong_zhi_shu'', ''生活建议'')}}'
+      message: 最后一个测试了，老婆我马上就过来
     service: tts.baidu_say
