@@ -29,9 +29,9 @@ services :
       - 1883:1883
       - 9001:9001
 
-  home-assistant:
+  hass:
     image: homeassistant/home-assistant
-    container_name: HASS
+    container_name: hass
     restart: unless-stopped
     environment:
       - TZ=Asia/Shanghai
@@ -41,3 +41,15 @@ services :
     #network_mode: host
     ports:
       - 8123:8123
+
+#  proxy-hass:
+#    image: nginx:alpine
+#    container_name: proxy-hass
+#    restart: unless-stopped
+#    ports:
+#      - 8123:8123
+#    volumes:
+#      - ./conf/proxy.conf:/etc/nginx/conf.d/default.conf
+#      - ./config/ssl/:/etc/nginx/cert/
+#    depends_on:
+#      - hass

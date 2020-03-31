@@ -8,3 +8,6 @@ sensor.mitemp_bt_humidity:
   friendly_name: 米家蓝牙温湿度计湿度
 sensor.mitemp_bt_temperature:
   friendly_name: 米家蓝牙温湿度计温度
+climate.xiao_mi_kong_diao_ban_lu:
+  friendly_name: 小米空调伴侣
+  hagenie_deviceType: aircondition

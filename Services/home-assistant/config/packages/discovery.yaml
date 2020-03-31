@@ -1,3 +1,5 @@
+#dlna:
 discovery:
-  enable:
-    - dlna_dmr
+#  enable:
+#    - dlna_dmr
+

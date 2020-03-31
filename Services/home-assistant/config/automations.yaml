@@ -70,3 +70,48 @@
       entity_id: media_player.shu_mei_pai_yin_xiang
       message: 太阳快下山啦，看看窗外吧！
     service: tts.baidu_say
+  - data:
+      cache: true
+      entity_id: media_player.dlna_digital_media_renderer
+      message: 太阳快下山啦，看看窗外吧！
+    service: tts.baidu_say
+- id: '1585051376083'
+  alias: 天气播报test
+  trigger:
+  - at: '8:30:00'
+    platform: time
+  condition: []
+  action:
+#  - data_template:
+#      data:
+#        html: "<html> <head>\n  <meta charset=\"UTF-8\">\n  <meta http-equiv=\"Content-Type\"\
+#          \ content=\"text/html; charset=UTF-8\">\n  <meta name=\"viewport\" content=\"\
+#          width=device-width, initial-scale=1.0\">\n  <title>今日天气情况</title>\n</head>\
+#          \ <body>\n  <div>\n {{state_attr('sensor.weather_html','生活建议')}}\n  </div>\n\
+#          </body> </html>    "
+#      message: 测试
+#      title: 今日天气情况
+#    service: notify.mail
+  - data_template:
+      cache: true
+      entity_id: media_player.dlna_digital_media_renderer
+      message: 天气播报。今天天气：{{states('sensor.tian_qi_zhuang_tai')}}；空气质量：{{states('sensor.kong_qi_zhi_liang')}}。
+        现在气温：{{states('sensor.shi_shi_shi_wai_wen_du')}}°C，湿度:{{states('sensor.shi_shi_shi_wai_shi_du')}}%，风力：{{states('sensor.feng_li')}}级。
+        出行建议：{{states('sensor.chu_xing_zhi_shu')}}，{{state_attr('sensor.chu_xing_zhi_shu','生活建议')}}
+    service: tts.baidu_say
+  - delay: '27'
+  - data_template:
+      cache: true
+      entity_id: media_player.dlna_digital_media_renderer
+      message: 穿衣建议：{{states('sensor.chuan_yi_zhi_shu')}}，{{state_attr('sensor.chuan_yi_zhi_shu','生活建议')}}
+        紫外线强度：{{states('sensor.zi_wai_xian_zhi_shu')}}，{{state_attr('sensor.zi_wai_xian_zhi_shu','生活建议')}}
+    service: tts.baidu_say
+  - delay: '25'
+  - data_template:
+      cache: true
+      entity_id: media_player.dlna_digital_media_renderer
+      message: 感冒概率：{{states('sensor.gan_mou_zhi_shu')}}，{{state_attr('sensor.gan_mou_zhi_shu','生活建议')}}
+        运动建议：{{states('sensor.yun_dong_zhi_shu')}}，{{state_attr('sensor.yun_dong_zhi_shu',
+        '生活建议')}}
+    service: tts.baidu_say
+  initial_state: true

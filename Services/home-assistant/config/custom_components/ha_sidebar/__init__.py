@@ -48,15 +48,6 @@ def setup(hass, config):
 
     # 注入定时脚本
     hass.components.frontend.add_extra_js_url(hass, ROOT_PATH + '/ha_sidebar.js')
-    # 显示插件信息
-    _LOGGER.info('''
--------------------------------------------------------------------
-    侧边栏管理【作者QQ：635147515】
-    
-    版本：''' + VERSION + '''    
-        
-    项目地址：https://github.com/shaonianzhentan/ha_sidebar
--------------------------------------------------------------------''')
     return True
 
 

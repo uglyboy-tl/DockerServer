@@ -9,4 +9,5 @@
 default: info
 logs:
   homeassistant.components.sensor: debug
+  custom_components.xiaomi_miio_airconditioningcompanion.climate: debug
   root: info

@@ -2,7 +2,7 @@
   alias: 测试语音
   sequence:
   - data:
-      cache: true
-      entity_id: media_player.shu_mei_pai_yin_xiang
-      message: 最后一个测试了，老婆我马上就过来
-    service: tts.baidu_say
+      media_content_id: https://fdfs.xmcdn.com/group78/M0A/10/32/wKgO1l55wzTAkDLHABj-Z7PeYnw378.m4a
+      media_content_type: audio/m4a
+    entity_id: media_player.dlna_digital_media_renderer
+    service: media_player.play_media

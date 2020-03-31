@@ -1,0 +1,7 @@
+sensor:
+#  - platform: imap
+#    server: imap.163.com
+#    name: 老婆邮箱监控
+#    port: 993
+#    username: chenxuening89@163.com
+#    password: ICWKSQNOGCHXFQKL

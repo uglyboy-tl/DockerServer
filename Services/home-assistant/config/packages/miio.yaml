@@ -1,0 +1,28 @@
+#switch:
+#  - platform: xiaomi_miio
+#    host: 192.168.0.121
+#    token: 6a7a46664358d9d2e8b8457da85a7b33
+#    model: 	chuangmi.plug.hmi208
+
+climate:
+  - platform: xiaomi_miio_airconditioningcompanion
+    host: 192.168.0.118
+    token: 18971b0ae21e9e2afd2e4ca4710aea2c
+    target_sensor: sensor.temperature_158d0001f53706
+    scan_interval: 600
+#    customize:
+#      hvac:
+#        off: FE000000000000000000000000060064228A002A004000AF01B9021713883302010202010102010102010102020102010202020201020202010101010201010202020101010101010101020202020204330201020201010201010201010202010201020202020102020201010101020101020202010101010101010102020202020586
+
+vacuum:
+  - platform: xiaomi_miio
+    host: 192.168.0.104
+    token: 6e786e495036783046504e6c5833764d
+
+#sensor:
+#  - platform: mitemp_bt
+#    mac: '4C:65:A8:D5:66:F8'
+#    monitored_conditions:
+#      - temperature
+#      - humidity
+#      - battery

@@ -8,6 +8,13 @@ services :
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
+      - $SSL:/certs/
+    ports:
+      - 9000:9000
+    command:
+      - "--ssl"
+      - "--sslcert=/certs/server.crt"
+      - "--sslkey=/certs/server.key"
 
   watchtower:
     image: containrrr/watchtower
@@ -18,37 +25,6 @@ services :
     environment:
       - REPO_USER=$USERNAME
       - REPO_PASS=$USERPASS
-
-  server:
-    image: nginx:alpine
-    container_name: server
-    restart: unless-stopped
-    hostname: Uglyboy
-    ports:
-      - 9000:9000
-    volumes:
-      - $CONFIG:/etc/nginx/conf.d/
-      - $SSL:/etc/nginx/cert/
-
-  samba:
-    image: elswork/samba
-    container_name: samba
-    restart: unless-stopped
-    ports:
-      - 137:137
-      - 138:138
-      - 139:139
-      - 445:445
-    volumes:
-      - /mnt/public/Cloud:/share/Cloud
-      - /mnt/public/Media:/share/Media
-    command:
-      - "-u"
-      - "uglyboy:zudhr4ed"
-      - "-s"
-      - "分享:/share/Cloud:rw:uglyboy"
-      - "-s"
-      - "影视:/share/Media:rw:uglyboy"
 
 volumes:
   portainer_data:
